@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>HomeWorkArh9.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="business\**" />
+    <Compile Remove="data\**" />
+    <Compile Remove="domain\**" />
+    <Compile Remove="Пример\**" />
+    <EmbeddedResource Remove="business\**" />
+    <EmbeddedResource Remove="data\**" />
+    <EmbeddedResource Remove="domain\**" />
+    <EmbeddedResource Remove="Пример\**" />
+    <None Remove="business\**" />
+    <None Remove="data\**" />
+    <None Remove="domain\**" />
+    <None Remove="Пример\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Collections.NonGeneric" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
